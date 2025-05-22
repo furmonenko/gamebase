@@ -80,5 +80,5 @@ gamebase/
 
 ## 👨‍💻 Authors
 
-- [Zakharii Furmanets]
-- [Adam Pabianiak]
+- Zakharii Furmanets
+- Adam Pabianiak
