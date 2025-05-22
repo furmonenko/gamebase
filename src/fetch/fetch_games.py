@@ -12,11 +12,11 @@ if not API_KEY:
     raise ValueError("RAWG_API_KEY is not set in the .env file.")
 
 BASE_URL = "https://api.rawg.io/api/games"
-OUTPUT_DIR = Path("data/raw")
+OUTPUT_DIR = Path("../../data/raw")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Parameters
-NUM_PAGES = 3  # Change this to fetch more pages
+NUM_PAGES = 10  # Change this to fetch more pages
 PAGE_SIZE = 40
 
 for page in range(1, NUM_PAGES + 1):
@@ -24,8 +24,8 @@ for page in range(1, NUM_PAGES + 1):
         "key": API_KEY,
         "page": page,
         "page_size": PAGE_SIZE,
-        "dates": "2020-01-01,2024-12-31",
-        "ordering": "-added"
+        "dates": "2000-01-01,2024-12-31",
+        "ordering": "-rating"
     }
     try:
         print(f"Fetching page {page}...")

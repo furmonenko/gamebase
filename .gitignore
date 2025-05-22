@@ -25,6 +25,10 @@ Thumbs.db
 .pytest_cache/
 .cache/
 
+# Raw data (JSON from API)
+data/raw/
+*.json
+
 # Exported data/results
 results/exports/
 *.csv
