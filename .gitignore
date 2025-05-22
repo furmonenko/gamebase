@@ -1,0 +1,44 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python test cache
+.pytest_cache/
+.cache/
+
+# Exported data/results
+results/exports/
+*.csv
+*.tsv
+*.parquet
+*.feather
+
+# Database files
+*.sqlite
+*.db
+
+# Logs
+*.log
+
+# Secret keys or config overrides (optional)
+config_local.py
+.env
